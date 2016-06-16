@@ -1,6 +1,6 @@
 FROM jenkinsci/jenkins:latest
 USER root
-RUN apt-get update && apt-get install -y nano
+RUN apt-get update && apt-get install -y nano maven
 RUN mkdir /var/log/jenkins
 RUN mkdir /var/cache/jenkins
 RUN chown -R jenkins:jenkins /var/log/jenkins
